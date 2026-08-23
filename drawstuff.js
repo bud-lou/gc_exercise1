@@ -79,7 +79,7 @@ function main() {
  
     // Draw a rectangle with pixels
     // var c = new Color(75, 196, 192,50); // the color at the pixel: black opaque
-    var colors = [new Color(9, 28, 176 100), new Color(135, 61, 130, 100), new Color(9, 28, 176 100)]
+    var colors = [new Color(9, 28, 176, 100), new Color(135, 61, 130, 100), new Color(9, 28, 176, 100)];
     for (var x=100; x<690; x++) 
         for (var y=90; y<390; y++) {
             var cs = 0;
