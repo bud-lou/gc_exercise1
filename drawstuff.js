@@ -78,10 +78,11 @@ function main() {
     var imagedata = context.createImageData(w,h);
  
     // Draw a rectangle with pixels
-    var c = new Color(75, 196, 192,50); // the color at the pixel: black opaque
+    // var c = new Color(75, 196, 192,50); // the color at the pixel: black opaque
+    var colors = [new Color(214, 2, 112, 50), new Color(155, 79, 150, 50), new Color(0, 156, 68, 50)]
     for (var x=50; x<100; x++) 
         for (var y=50; y<75; y++) {
-            drawPixel(imagedata,x,y,c);
+            drawPixel(imagedata,x,y,colors[x%3]);
             // console.log("draw at " +x+ " " +y);
         }
     
