@@ -80,12 +80,12 @@ function main() {
     // Draw a rectangle with pixels
     // var c = new Color(75, 196, 192,50); // the color at the pixel: black opaque
     var colors = [new Color(214, 2, 112, 100), new Color(135, 61, 130, 100), new Color(9, 28, 176, 100)]
-    for (var x=100; x<190; x++) 
-        for (var y=90; y<125; y++) {
+    for (var x=100; x<690; x++) 
+        for (var y=90; y<390; y++) {
             var cs = 0;
-            if (130 < y && y < 160) {
+            if (190 < y && y < 290) {
                 cs = 1;
-            } else if (y > 160) {
+            } else if (y > 290) {
                 cs = 2;
             }
             drawPixel(imagedata,x,y,colors[cs]);
